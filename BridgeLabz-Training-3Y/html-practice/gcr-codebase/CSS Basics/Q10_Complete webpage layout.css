@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+/* Sticky positioning keeps header at top while scrolling */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px 7%;
+    background-color: rgba(15, 23, 42, 0.95);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    /* Border demonstrates Box Model */
+    border-bottom: 3px solid #38bdf8;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero uses relative positioning */
+.hero {
+    position: relative;
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.65),
+            rgba(30, 64, 175, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 40px;
+}
+
+.hero-content h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #38bdf8;
+    color: #082f49;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+    /* Outline property */
+    outline: 3px solid rgba(56, 189, 248, 0.3);
+}
+
+/* Absolute positioning inside relative hero */
+.badge {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background-color: #f59e0b;
+    color: #111827;
+    font-weight: bold;
+}
+
+/* About section */
+.about {
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: white;
+}
+
+.about-text,
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    padding: 30px;
+    border-left: 5px solid #2563eb;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    border: 5px solid #e2e8f0;
+}
+
+/* Services */
+.services {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+    text-align: center;
+}
+
+.services > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+}
+
+.service-box {
+    flex: 1;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #bfdbfe;
+    border-radius: 15px;
+
+    /* Shadow + Box Model */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #e0f2fe;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border: 2px solid #94a3b8;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    min-height: 150px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #1e40af;
+}
+
+/* Fixed position element */
+footer {
+    position: relative;
+    padding: 25px;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav a {
+        margin: 0 7px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .badge {
+        top: 20px;
+        right: 20px;
+    }
+}

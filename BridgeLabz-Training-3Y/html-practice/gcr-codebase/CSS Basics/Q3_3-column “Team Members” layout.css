@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.team-section {
+    padding: 60px 8%;
+}
+
+.team-section > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Box Model is used for consistent spacing */
+.card {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Highlight the team leader */
+.leader {
+    background-color: #dbeafe;
+    border: 3px dashed #2563eb;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+    }
+
+    .leader {
+        transform: none;
+    }
+}
