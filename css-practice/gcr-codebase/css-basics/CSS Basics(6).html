@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="Assignment5(6).css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .gallery-section {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        figure {
+            background-color: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="gallery-section">
+
+    <h1>Photo Gallery</h1>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="https://picsum.photos/id/1015/600/400" alt="Mountain">
+            <figcaption>Beautiful Mountain</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1016/600/400" alt="Landscape">
+            <figcaption>Natural Landscape</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1018/600/400" alt="Forest">
+            <figcaption>Green Forest</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1025/600/400" alt="Dog">
+            <figcaption>Lovely Dog</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1035/600/400" alt="River">
+            <figcaption>Peaceful River</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/1043/600/400" alt="Beach">
+            <figcaption>Sunny Beach</figcaption>
+        </figure>
+
+    </div>
+
+</main>
+
+</body>
+</html>

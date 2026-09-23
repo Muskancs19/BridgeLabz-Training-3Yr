@@ -1,0 +1,145 @@
+ASSIGNMENT 1
+INTRO TO WEB DEVELOPMENT
+
+
+Q1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Answer:
+
+Frontend Development:
+Frontend is the part of a website that users can see and interact with. It is mainly developed using HTML, CSS, and JavaScript.
+Example: The login page, buttons, menus, and images on a website.
+
+Backend Development:
+Backend is the server-side part of a website. It handles data, business logic, user authentication, and requests from the frontend.
+Example: Checking a user's username and password during login.
+
+Full-Stack Development:
+Full-stack development includes both frontend and backend development. A full-stack developer can work on the complete web application.
+Example: Developing the complete frontend, backend, and database of an online shopping website.
+
+
+Q2. Create a simple diagram showing how the client-server model works in web architecture.
+
+Answer:
+
+             CLIENT
+          (Web Browser)
+                |
+                | HTTP Request
+                v
+             SERVER
+                |
+                | HTTP Response
+                v
+             CLIENT
+          (Web Browser)
+
+The client sends a request to the server, and the server processes the request and sends a response back to the client.
+
+
+Q3. Describe how a browser requests and displays a web page from a web server.
+
+Answer:
+
+When a user enters a website URL, the browser sends a request to the web server. The server receives and processes the request. It then sends the required HTML, CSS, JavaScript, and other files to the browser. The browser processes these files and renders the web page on the screen.
+
+
+Q4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+
+Answer:
+
+1. VS Code - Used to write and edit HTML, CSS, and JavaScript code.
+2. Web Browser - Used to run and test web pages.
+3. Git - Used to track changes in the project.
+4. GitHub - Used to store and share project code online.
+5. Node.js - Used to run JavaScript outside the browser and for development tools.
+
+
+Q5. Explain what a web server is and give examples of commonly used servers.
+
+Answer:
+
+A web server is a software or computer system that receives requests from web browsers and sends web pages or other resources in response. It helps users access websites over the internet.
+
+Examples of commonly used web servers are:
+1. Apache
+2. Nginx
+3. Microsoft IIS
+4. LiteSpeed
+
+
+Q6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Answer:
+
+Frontend Developer:
+A frontend developer creates the visible part of a website and makes the user interface interactive and responsive.
+
+Backend Developer:
+A backend developer manages server-side logic, APIs, user authentication, and communication with the database.
+
+Database Administrator:
+A database administrator manages the project's database. They handle data storage, security, backup, and database performance.
+
+
+Q7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Answer:
+
+Visual Studio Code was installed and configured for HTML, CSS, and JavaScript development. A project folder was created and the required files were opened in VS Code. The Live Server extension can also be used to run and test web pages.
+
+Screenshot:
+setup_screenshot.png
+
+
+Q8. Explain the difference between static and dynamic websites. Provide an example of each.
+
+Answer:
+
+Static Website:
+A static website has fixed content that remains the same for users. It is usually created using HTML and CSS.
+Example: A simple personal portfolio website.
+
+Dynamic Website:
+A dynamic website can display different or changing content based on users, data, or database information.
+Example: Amazon, Facebook, or Instagram.
+
+Main difference:
+Static websites have mostly fixed content, while dynamic websites can generate and update content.
+
+
+Q9. Research and list five web browsers. Explain how rendering engines differ between them.
+
+Answer:
+
+Five commonly used web browsers are:
+
+1. Google Chrome - Blink
+2. Mozilla Firefox - Gecko
+3. Microsoft Edge - Blink
+4. Apple Safari - WebKit
+5. Opera - Blink
+
+A rendering engine processes HTML, CSS, and other web resources and displays the web page. Different browsers may use different rendering engines, so some websites may look or behave slightly differently in different browsers.
+
+
+Q10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+Answer:
+
+              CLIENT
+           (Web Browser)
+                 |
+                 | Request
+                 v
+              SERVER
+            /        \
+           v          v
+       DATABASE      APIs
+           \          /
+            \        /
+             Response
+                 |
+                 v
+              CLIENT
