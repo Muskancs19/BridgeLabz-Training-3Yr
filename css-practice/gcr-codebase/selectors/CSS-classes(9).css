@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    background: #111827;
+    color: white;
+    padding: 25px;
+}
+
+.effects {
+    min-height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.effect-button {
+    padding: 18px 35px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px #0003;
+
+    transition:
+        transform 0.3s ease-in-out,
+        background 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+
+.blue {
+    background: #2563eb;
+}
+
+.blue:hover {
+    background: #1d4ed8;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px #0004;
+}
+
+.green {
+    background: #16a34a;
+}
+
+.green:hover {
+    background: #15803d;
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 10px 25px #0004;
+}
+
+.purple {
+    background: #9333ea;
+}
+
+.purple:hover {
+    background: #7e22ce;
+    transform: scale(1.1);
+}
+
+.effect-button:active {
+    transform: scale(0.9);
+}
+
+.effect-button:focus {
+    outline: 3px solid #93c5fd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}

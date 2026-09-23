@@ -1,0 +1,71 @@
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+#special {
+    background: #fef3c7;
+    padding: 20px;
+    border-left: 5px solid #f59e0b;
+}
+a[href] {
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+.parent > p {
+    background: #dcfce7;
+    padding: 10px;
+}
+
+.parent p {
+    border-radius: 5px;
+}
+
+h3 + p {
+    color: #dc2626;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    margin-left: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #1e293b;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #0001;
+}
+
+footer {
+    text-align: center;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+}
