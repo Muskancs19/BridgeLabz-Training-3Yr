@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Student Registration </h2>
+    <form id = "studentForm">
+        <input id = "studentName"
+        placeholder="Eneter your name" required>
+        <button type="submit"> Register </button>
+    </form>
+    
+    <p id = "message"></p> 
+    <script>
+        const form = document.getElementById("studentForm");
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+            const name = 
+            document.getElementById("studentName").value;
+            document.getElementById("message").textContent = "Welcome, " + name + "!";
+        });
+    </script>
+
+
+    
+</body>
+</html>

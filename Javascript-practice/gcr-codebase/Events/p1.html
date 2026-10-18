@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <h2>Magic Box</h2>
+    <div
+    id = "box"
+    style = "
+    width: 250px;
+    padding: 35px;
+    background: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    "
+    >Interact with me!</div>
+    <p id = "result"> Waiting for the event !</p>
+    <script> 
+    
+    // Mouse Event :
+        const box = document.getElementById("box");
+        const result = document.getElementById("result");
+        box.addEventListener("click", function(){
+            box.style.backgroundColor = "pink";
+            result.textContent = "Click Event";
+        });
+        box.addEventListener("dblclick", function(){
+            box.style.backgroundColor = "yellow";
+            result.textContent = "Double-Click Event";
+        });
+        box.addEventListener("mouseenter", function(){
+            box.style.backgroundColor = "red";
+            result.textContent = "Mouse Click Event";
+        });
+        box.addEventListener("mouseleave", function(){
+            box.style.backgroundColor = "orange";
+            result.textContent = "Leave Click Event";
+        });
+        box.addEventListener("mouseup", function(){
+            box.style.backgroundColor = "beige";
+            result.textContent = "Up Click Event";
+        });
+    </script>
+</body>
+</html>
