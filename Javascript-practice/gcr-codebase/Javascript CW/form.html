@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" id="phone"
+               pattern="[0-9]{10}" maxlength="10" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <h3 id="result"></h3>
+
+    <script>
+            let name = document.getElementById("Name").value;
+            let phone = document.getElementById("Phone").value;
+            let email = document.getElementById("Email").value;
+
+            
+            
+            
+
+        
+    </script>
+
+</body>
+</html>

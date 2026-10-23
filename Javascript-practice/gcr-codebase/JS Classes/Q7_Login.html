@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            display: block;
+            padding: 10px;
+            width: 250px;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form id="loginForm" novalidate>
+        <label>Username:</label>
+        <input type="text" id="username">
+
+        <label>Password:</label>
+        <input type="password" id="password">
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="q7_login.js"></script>
+</body>
+</html>

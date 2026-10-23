@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .valid {
+            border-color: green;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form id="studentForm" novalidate>
+        <label>Name:</label>
+        <input type="text" id="name">
+        <div class="error" id="nameError"></div>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <div class="error" id="emailError"></div>
+
+        <label>Phone:</label>
+        <input type="text" id="phone">
+        <div class="error" id="phoneError"></div>
+
+        <label>Password:</label>
+        <input type="password" id="password">
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+    <script src="Q2_Student_form.js"></script>
+</body>
+</html>
