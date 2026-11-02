@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 30px; }
+.step { margin: 15px 0; }
+input { display: block; padding: 8px; margin-top: 6px; }
+button { padding: 8px 14px; margin-right: 6px; }
+#error { color: red; }

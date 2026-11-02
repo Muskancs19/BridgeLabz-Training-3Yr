@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; margin: 25px; }
+#gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 650px; }
+#gallery img { width: 100%; cursor: pointer; border-radius: 5px; }
+#modal { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; }
+#modal[hidden] { display: none; }
+#modalContent { background: white; padding: 12px; max-width: 85%; }
+#largeImage { display: block; max-width: 80vw; max-height: 75vh; }
+#closeButton { margin-bottom: 8px; padding: 6px 12px; }

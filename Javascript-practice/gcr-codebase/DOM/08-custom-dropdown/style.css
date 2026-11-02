@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 30px; }
+#dropdown { position: relative; width: 220px; }
+#dropdownButton { width: 100%; padding: 10px; text-align: left; }
+#options { border: 1px solid #aaa; position: absolute; width: 100%; background: white; }
+#options[hidden] { display: none; }
+.option { display: block; width: 100%; padding: 9px; border: 0; background: white; text-align: left; cursor: pointer; }
+.option:hover { background: #eee; }

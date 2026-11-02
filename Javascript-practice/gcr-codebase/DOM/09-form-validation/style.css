@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 30px; max-width: 350px; }
+label { display: block; margin-top: 12px; }
+input { display: block; box-sizing: border-box; width: 100%; padding: 8px; margin-top: 4px; }
+button { padding: 8px 16px; margin-top: 15px; }
+.error { color: red; display: block; min-height: 18px; }
+#successMessage { color: green; font-weight: bold; }

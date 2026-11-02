@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="registrationForm">
+    <section class="step">
+      <label>Name:</label>
+      <input id="name" type="text" placeholder="Enter your name">
+    </section>
+    <section class="step" hidden>
+      <label>Email:</label>
+      <input id="email" type="email" placeholder="Enter your email">
+    </section>
+    <section class="step" hidden>
+      <label>Password:</label>
+      <input id="password" type="password" placeholder="At least 6 characters">
+    </section>
+    <p id="error"></p>
+    <button type="button" id="backButton">Back</button>
+    <button type="button" id="nextButton">Next</button>
+  </form>
+  <div id="summary" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

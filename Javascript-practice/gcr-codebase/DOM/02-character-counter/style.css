@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; margin: 30px; }
+textarea { width: 320px; height: 130px; padding: 10px; display: block; }
+#counter { color: green; }
+button { padding: 8px 14px; }
